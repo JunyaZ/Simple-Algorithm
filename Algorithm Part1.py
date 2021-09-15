@@ -111,7 +111,17 @@ def bubblesort(arr):
         for j in range(end_indx-i):
             if arr[j] > arr[j+1]:
                 arr[j],arr[j+1]=arr[j+1],arr[j]
+# 5. liner search
+
+def Search(arr,target):
+    for i in range(0,len(arr)):
+        if arr[i]==target:
+            return i
+    print("target is not in the list")
+    return None
 
 print("Before",examples)
 bubblesort(examples)
 print("after",examples)
+
+print(Search(examples, 27))
